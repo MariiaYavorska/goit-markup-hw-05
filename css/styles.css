@@ -32,6 +32,19 @@ a {
 	--border-color-projects: #eeeeee;
 	--icon-color: #afb1b8;
 }
+
+.visually-hidden {
+	position: absolute;
+	width: 1px;
+	height: 1px;
+	margin: -1px;
+	border: 0;
+	padding: 0;
+	white-space: nowrap;
+	clip-path: inset(100%);
+	clip: rect(0 0 0 0);
+	overflow: hidden;
+  }
 /*======================== General styles for index.html page=======================*/
 body {
 	margin: 0;
@@ -202,7 +215,20 @@ body {
 	color: var(--text-color-white);
 	background-color: var(--accent-color);
 }
-/* =============================Почему мы=================================*/
+/* =============================Benefits=================================*/
+.title {
+	position: absolute;
+	width: 1px;
+	height: 1px;
+	margin: -1px;
+	border: 0;
+	padding: 0;
+	white-space: nowrap;
+	clip-path: inset(100%);
+	clip: rect(0 0 0 0);
+	overflow: hidden;
+}
+
 .work-process,
 .benefits,
 .team {
@@ -506,19 +532,19 @@ body {
 	margin-right: 30px;
 	margin-bottom: 30px;
 	width: 370px;
-	border: 1px solid var(--border-color-projects);
+	
+	
 }
 .works-card-img {
 	display: block;
 	width: 100%;
+	
 }
 
 .works-img-txt {
     display: flex;
 	position: relative;
     overflow: hidden;
-
-
 }
 .pop-up-text {
 	position: absolute;
@@ -545,6 +571,9 @@ body {
 	transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .works-card {
+	border-bottom: 1px solid var(--border-color-projects);
+	border-right: 1px solid var(--border-color-projects);
+	border-left: 1px solid var(--border-color-projects);
 	padding: 20px 24px;
 }
 .works-title {
