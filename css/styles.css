@@ -235,6 +235,7 @@ body {
 	letter-spacing: 0.06em;
 	color: var(--text-color-white);
 	background-color: var(--accent-color);
+	cursor: pointer;
 }
 /* =============================Benefits=================================*/
 .work-process,
@@ -618,7 +619,7 @@ body {
 	font-size: 16px;
 	line-height: 1.88;
 }
-
+/*==============================Styles for Modal Window======================================= */
 .backdrop {
 	position: fixed;
 	top: 0;
