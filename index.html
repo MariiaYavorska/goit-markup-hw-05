@@ -46,12 +46,12 @@
 		<main>
 			<section class="hero">
 				<h1 class="hero-title">Эффективные решения для вашего бизнеса</h1>
-				<button type="button" class="hero-btn">Заказать услугу</button>
+				<button type="button" class="hero-btn" data-modal-open>Заказать услугу</button>
 			</section>
 			<!--Benefits-->
 			<section class="benefits">
 				<div class="container">
-					<h2 class="title">Почему мы</h2>
+					<h2 class="visually-hidden">Почему мы</h2>
 					<ul class="benefits-list">
 						<li class="item">
 							<h3 class="benefits-title">Внимание к деталям</h3>
@@ -83,14 +83,17 @@
 				<div class="container">
 					<h2 class="work-process-title">Чем мы занимаемся</h2>
 					<ul class="work-process-gallery">
-						<li class="work-process-img">
-							<img src="./images/pic1.jpg" alt="Изображение рабочего процесса1" width="370" />
+						<li class="work-process-list">
+							<img class="work-process-img" src="./images/pic1.jpg" alt="Изображение рабочего процесса1" width="370" />
+                            <h3 class="white-title">десктопные приложения</h3>
 						</li>
-						<li class="work-process-img">
-							<img src="./images/pic2.jpg" alt="Изображение рабочего процесса2" width="370" />
+						<li class="work-process-list">
+							<img class="work-process-img" src="./images/pic2.jpg" alt="Изображение рабочего процесса2" width="370" />
+                            <h3 class="white-title">мобильные приложения</h3>
 						</li>
-						<li class="work-process-img">
-							<img src="./images/pic3.jpg" alt="Изображение рабочего процесса3" width="370" />
+						<li class="work-process-list">
+							<img class="work-process-img" src="./images/pic3.jpg" alt="Изображение рабочего процесса3" width="370" />
+                            <h3 class="white-title">дизайнерские решения</h3>							
 						</li>
 					</ul>
 				</div>
@@ -358,5 +361,13 @@
 				</div>
 			</div>
 		</footer>
+
+        <div class="backdrop is-hidden" data-modal>
+			<div class="modal">
+				<button class="button-close" data-modal-close></button>
+			</div>
+		</div>
+
+		<script src="./js/modal.js"></script>
 	</body>
 </html>
