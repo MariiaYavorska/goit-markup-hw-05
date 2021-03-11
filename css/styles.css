@@ -322,6 +322,7 @@ body {
 .white-title {
 	position: absolute;
 	padding: 27px 0;
+	font-size: 14px;
 	font-weight: 700;
     line-height: 1.14;
 	width: 100%;
