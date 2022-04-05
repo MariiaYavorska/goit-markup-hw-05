@@ -222,6 +222,10 @@ body {
 	text-transform: uppercase;
 	color: var(--text-color-white);
 }
+
+.btn{
+	cursor: pointer;
+}
 .hero-btn {
 	margin-top: 0;
 	padding: 10px 32px;
@@ -238,6 +242,11 @@ body {
 	color: var(--text-color-white);
 	background-color: var(--accent-color);
 	cursor: pointer;
+}
+
+.hero-btn:hover,
+.hero-btn:focus{
+background-color: #188CE8;
 }
 /* =============================Benefits=================================*/
 .work-process,
@@ -456,6 +465,10 @@ body {
 .link-address {
 	font-style: normal;
 	color: var(--text-color-white);
+}
+.link-address:hover,
+.link-address:focus{
+	color: var(--accent-color);
 }
 
 .auth-nav-footer:first-child {
