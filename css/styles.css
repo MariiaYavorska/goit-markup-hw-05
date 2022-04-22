@@ -49,6 +49,7 @@ img {
 	--background-color-social-link-footer: rgba(255, 255, 255, 0.1);
 	--border-color: #e5e5e5;
 	--border-color-projects: #eeeeee;
+	--border-color-close-button: rgba(0, 0, 0, 0.1);
 	--icon-color: #afb1b8;
 	--timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -154,7 +155,7 @@ body {
   position: absolute;
   display: inline-block;
   content: '';
-  bottom: 0;
+  bottom: -1px;
   left: 0;
   height: 4px;
   width: 100%;
@@ -639,6 +640,7 @@ background-color: #188CE8;
 	transition: transform 250ms var(--timing-function), opacity 250ms var(--timing-function);
 }
 .backdrop.is-hidden {
+	visibility: hidden;
 	opacity: 0;
 	pointer-events: none;
 	transform: scale(0);
@@ -660,7 +662,8 @@ background-color: #188CE8;
 	width: 30px;
 	height: 30px;
 	border-radius: 50%;
-	border: none;
+	background: var(--text-color-white);
+	border: 1px solid var(--border-color-close-button);
 	background-repeat: no-repeat;
 	background-position: center;
 	background-image: url(../images/icons/close.svg);	  
